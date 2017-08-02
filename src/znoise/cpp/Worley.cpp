@@ -12,13 +12,13 @@
 
 Worley::Worley() :
   scales{
-    1.f / std::sqrt(2),
-    0.5f / std::sqrt(2),
-    0.5f / std::sqrt(2),
-    0.5f / std::sqrt(2)
+    float(1.f / std::sqrt(2)),
+    float(0.5f / std::sqrt(2)),
+    float(0.5f / std::sqrt(2)),
+    float(0.5f / std::sqrt(2))
   }
 {
-  function = WorleyFunction_F1;
+  function = WorleyFunction::WorleyFunction_F1;
 }
 
 Worley::Worley(unsigned int seed) : Worley()
@@ -72,59 +72,59 @@ float Worley::_2D(std::initializer_list<float> coordinates, float scale) const
     _SquareTest(x0,y0,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(fractx < it->first)
         _SquareTest(x0 - 1,y0,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(1.f - fractx < it->first)
         _SquareTest(x0 + 1,y0,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(fracty < it->first)
         _SquareTest(x0,y0 - 1,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(1.f - fracty < it->first)
         _SquareTest(x0,y0 + 1,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(fractx < it->first &&
        fracty < it->first)
        _SquareTest(x0 - 1, y0 - 1,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(1.f - fractx < it->first &&
        fracty < it->first)
        _SquareTest(x0 + 1, y0 - 1,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(fractx < it->first &&
        1.f - fracty < it->first)
        _SquareTest(x0 - 1, y0 + 1,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     if(1.f - fractx < it->first &&
        1.f - fracty < it->first)
        _SquareTest(x0 + 1, y0 + 1,xc,yc,featurePoints);
 
     it = featurePoints.begin();
-    std::advance(it,function);
+    std::advance(it,int32_t(function));
 
     return it->first * scales[function];
 }

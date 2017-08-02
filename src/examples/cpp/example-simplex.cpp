@@ -11,7 +11,7 @@ void generate_simplex(cimg_library::CImg<unsigned char> & image)
     for(int x = 0 ; x < image.width() ; x++)
         for(int y = 0 ; y < image.height() ; y++)
         {
-            float value =  simplex.Get({x,y},0.01f);
+            float value = simplex.Get({float(x) , float(y)}, 0.01f);
 
             unsigned int greyscale = static_cast<unsigned int>((value + 1.f) / 2.f * 255.f);
 
@@ -33,7 +33,7 @@ void generate_simplex_3dslice(cimg_library::CImg<unsigned char> & image)
     for(int x = 0 ; x < image.width() ; x++)
         for(int y = 0 ; y < image.height() ; y++)
         {
-            float value =  simplex.Get({x,y,1.f},0.01f);
+            float value = simplex.Get({float(x) , float(y),1.f}, 0.01f);
             
             unsigned int greyscale = static_cast<unsigned int>((value + 1.f) / 2.f * 255.f);
 
@@ -55,7 +55,7 @@ void generate_simplex_4dslice(cimg_library::CImg<unsigned char> & image)
     for(int x = 0 ; x < image.width() ; x++)
         for(int y = 0 ; y < image.height() ; y++)
         {
-            float value =  simplex.Get({x,y,1.f,2.f},0.01f);
+            float value = simplex.Get({float(x) , float(y),1.f,2.f}, 0.01f);
 
             unsigned int greyscale = static_cast<unsigned int>((value + 1.f) / 2.f * 255.f);
 

@@ -16,7 +16,7 @@ void generate_hmf(cimg_library::CImg<unsigned char> & image, float hurst, float 
     for(int x = 0 ; x < image.width() ; x++)
         for(int y = 0 ; y < image.height() ; y++)
         {
-            float value =  hmf.Get({x , y}, baseScale);
+            float value =  hmf.Get({float(x) , float(y)}, baseScale);
 
             unsigned int greyscale = static_cast<unsigned int>((value + 1.f) / 2.f * 255.f);
 

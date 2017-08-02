@@ -16,7 +16,7 @@ int main()
     generate_simplex_4dslice(output);
 
     // Example 2 - See scr/examples/cpp/example-worley.cpp
-    generate_worley(output,WorleyFunction_F1);
+    generate_worley(output, WorleyFunction::WorleyFunction_F1);
 
     // Example 3 - See scr/examples/cpp/example-fbm.cpp
     // lacunarity must be > 1, and should be > 2 to avoid scaling artifacts

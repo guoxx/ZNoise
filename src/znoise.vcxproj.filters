@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cimg">
+      <UniqueIdentifier>{5a398293-8b9e-45a8-b470-5caccdca8c01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="examples">
+      <UniqueIdentifier>{54009297-1e31-4f28-9692-bbe3e79a56f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{90a1cc91-a4fd-4718-b459-7ae855730416}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="znoise">
+      <UniqueIdentifier>{ffbc6898-77f3-468d-8f7e-6c57e7592cb7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cimg\headers\CImg.h">
+      <Filter>cimg</Filter>
+    </ClInclude>
+    <ClInclude Include="examples\headers\include_all.hpp">
+      <Filter>examples</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\Enums.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\FBM.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\HybridMultiFractal.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\MixerBase.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\NoiseBase.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\NoiseTools.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\Perlin.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\Simplex.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+    <ClInclude Include="znoise\headers\Worley.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="examples\cpp\example-fbm.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\cpp\example-hmf.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\cpp\example-perlin.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\cpp\example-simplex.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="examples\cpp\example-worley.cpp">
+      <Filter>examples</Filter>
+    </ClCompile>
+    <ClCompile Include="main\cpp\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\FBM.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\HybridMultiFractal.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\MixerBase.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\NoiseBase.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\NoiseTools.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\Perlin.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\Simplex.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\Worley.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
