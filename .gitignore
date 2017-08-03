@@ -236,3 +236,6 @@ pip-log.txt
 *.depend
 *.layout
 *.cbp
+
+int/
+out/

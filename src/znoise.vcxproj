@@ -24,6 +24,7 @@
     <ClInclude Include="znoise\headers\Enums.hpp" />
     <ClInclude Include="znoise\headers\FBM.hpp" />
     <ClInclude Include="znoise\headers\HybridMultiFractal.hpp" />
+    <ClInclude Include="znoise\headers\InvertedWorley.hpp" />
     <ClInclude Include="znoise\headers\MixerBase.hpp" />
     <ClInclude Include="znoise\headers\NoiseBase.hpp" />
     <ClInclude Include="znoise\headers\NoiseTools.hpp" />
@@ -40,6 +41,7 @@
     <ClCompile Include="main\cpp\main.cpp" />
     <ClCompile Include="znoise\cpp\FBM.cpp" />
     <ClCompile Include="znoise\cpp\HybridMultiFractal.cpp" />
+    <ClCompile Include="znoise\cpp\InvertedWorley.cpp" />
     <ClCompile Include="znoise\cpp\MixerBase.cpp" />
     <ClCompile Include="znoise\cpp\NoiseBase.cpp" />
     <ClCompile Include="znoise\cpp\NoiseTools.cpp" />

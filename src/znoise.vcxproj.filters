@@ -48,6 +48,9 @@
     <ClInclude Include="znoise\headers\Worley.hpp">
       <Filter>znoise</Filter>
     </ClInclude>
+    <ClInclude Include="znoise\headers\InvertedWorley.hpp">
+      <Filter>znoise</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="examples\cpp\example-fbm.cpp">
@@ -90,6 +93,9 @@
       <Filter>znoise</Filter>
     </ClCompile>
     <ClCompile Include="znoise\cpp\Worley.cpp">
+      <Filter>znoise</Filter>
+    </ClCompile>
+    <ClCompile Include="znoise\cpp\InvertedWorley.cpp">
       <Filter>znoise</Filter>
     </ClCompile>
   </ItemGroup>
